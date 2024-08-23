@@ -7,7 +7,7 @@ A variable name can only contain alpha-numeric characters and underscores (A-z, 
 Variable names are case-sensitive ($age and $AGE are two different variables)
 */
 
-$age = "5";
+$age = "5"; //gobale scope
 $AGE = 6;
 echo $age;
 var_dump($AGE); /*to find type*/
@@ -18,6 +18,14 @@ $x = 5;
 $y = $x;
 $z = $y;
 
+
 $x = $y = $z = 5;
 
 echo $z;
+echo '<br/>';
+function name($x){
+    $name = 'jino'.$x; // local scope
+    print($name);
+}
+
+name($x);
