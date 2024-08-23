@@ -1,30 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <?php
-            // This is a single comment
-            # This is a single comment
-            /*
-                this is a multi line comment
-            */
-            echo '<h3>Hwllo</h3>';
-            echo 'my last name is mukesh';
-            echo '</br>'; 
-            print('hello');
-            echo '</br>';
-            print_r('hello');
-            echo '</br>';
-            $mynewname = "Sam";
-            var_dump($mynewname);
+<?php 
+/*
+A variable starts with the $ sign, followed by the name of the variable
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive ($age and $AGE are two different variables)
+*/
 
-            $name = "sam";
-            echo "<h1>My name is $name</h1>";
-            echo '<h1>My name is '.$name.'</h1>';
-            $active = false;
-        ?>
-        <h1 style="color: <?php if($active === true){ echo 'red'; } else { echo 'violet'; } ?>">This is my website</h1>
-    </body>
-</html>
+$age = "5";
+$AGE = 6;
+echo $age;
+var_dump($AGE); /*to find type*/
+echo $AGE;
+echo '<br/>';
+
+$x = 5;
+$y = $x;
+$z = $y;
+
+$x = $y = $z = 5;
+
+echo $z;
